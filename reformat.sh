@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-# Remove process summaries from Brutus output files
+# Delete every line which does not start with a number 
+# Write the output to the edited/ directory
 #
 
 # Check if output directory already exists. If so, require user to delete it.
