@@ -1,3 +1,11 @@
+#!/bin/bash
+#
+# checkjobs
+# author: Jonathan Skowera
+# created: 2014
+#
+# polls list of current jobs once per second and prints output of finished jobs
+
 function getJobs {
   JOBS=`bjobs 2>/dev/null`
   NUMJOBS=$(( `echo "$JOBS" | wc -l` - 1 )) 
